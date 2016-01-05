@@ -13,11 +13,13 @@ buildscript {
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot' 
+apply plugin: 'spring-boot'
+
+group = 'com.jfrog'
+version = addBuildNumberFromCI('0.1.0')
 
 jar {
 	baseName = 'frogsws'
-	version = addBuildNumberFromCI('0.1.0')
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
