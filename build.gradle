@@ -17,7 +17,7 @@ apply plugin: 'spring-boot'
 
 jar {
 	baseName = 'frogsws'
-	version = '0.0.1-SNAPSHOT'
+	version = addBuildNumberFromCI('0.1.0')
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -43,4 +43,9 @@ eclipse {
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.9'
+}
+
+String addBuildNumberFromCI(String version) {
+	def buildNumber = System.getenv().BUILD_NUMBER
+	return buildNumber ? version + "-" + buildNumber : version
 }
