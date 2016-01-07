@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController
  * Created by alexistual on 05/01/2016.
  */
 @RestController
-@CrossOrigin(origins = "http://localhost:8000")
+@CrossOrigin(origins = "*")
 class FrogController {
 
     @Autowired
