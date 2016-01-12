@@ -17,7 +17,7 @@ class FrogRepository {
                 new Frog(name: 'The Frogfather', year: 2011, quote: 'Artifactory, an offer you can\'t refuse', imageUrl: '/frogfather.png'),
                 new Frog(name: 'Frocky', year: 2010, quote: 'Yo Adrian, I build it!', imageUrl: '/frocky.png'),
                 new Frog(name: 'Indiana Frog', year: 2009, quote: '', imageUrl: '/indy.png'),
-                new Frog(name: '?', year: 2008, quote: 'You killed my build, prepare to die', imageUrl: '/mousq.png')
+                new Frog(name: 'Princess Bride', year: 2008, quote: 'You killed my build, prepare to die', imageUrl: '/mousq.png')
         ]
     }
 

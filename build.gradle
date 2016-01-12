@@ -18,6 +18,12 @@ apply plugin: 'spring-boot'
 group = 'com.jfrog'
 version = addBuildNumberFromCI('0.1.0')
 
+processResources {
+	filesMatching("**/application.properties") {
+		expand version: version
+	}
+}
+
 jar {
 	baseName = 'frogsws'
 }
