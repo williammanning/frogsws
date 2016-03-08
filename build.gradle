@@ -23,7 +23,7 @@ targetCompatibility = 1.8
 
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
-	compile('org.codehaus.groovy:groovy')
+	compile('org.codehaus.groovy:groovy:2.4.6')
 	testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}") 
 }
 
