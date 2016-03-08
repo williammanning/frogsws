@@ -1,19 +1,10 @@
-buildscript {
-	ext {
-		springBootVersion = '1.3.1.RELEASE'
-	}
-	repositories {
-		jcenter()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
-	}
+ext {
+	springBootVersion = '1.3.1.RELEASE'
 }
 
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot'
 
 group = 'com.jfrog'
 version = addBuildNumberFromCI('0.1.0')
